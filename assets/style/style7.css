@@ -1,0 +1,60 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-gree: #ACD9B2;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.desktop-menu{
+    width: 13rem;
+    height: auto;
+    border: 0.1rem solid var(--very-light-pink);
+    border-radius: 0.6rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.desktop-menu ul{
+    list-style: none;
+}
+
+.desktop-menu ul li{
+    text-align: end;
+}
+
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2){
+    font-weight: bold;
+    font-size: var(--md);
+}
+
+.desktop-menu ul li:last-child{
+    padding-top: 2rem;
+    border-top: 0.1rem solid var(--very-light-pink);
+}
+
+.desktop-menu ul li:last-child a{
+    color: var(--hospital-gree);
+    font-size: var(--sm);
+}
+
+.desktop-menu ul li a{
+    display: inline-block;
+    color: var(--black);
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
