@@ -20,6 +20,10 @@ html{
     font-family: 'Quicksand', sans-serif;
 }
 
+body{
+    font-size: var(--sm);
+}
+
 .desktop-menu{
     width: 13rem;
     height: auto;
@@ -49,7 +53,6 @@ html{
 
 .desktop-menu ul li:last-child a{
     color: var(--hospital-gree);
-    font-size: var(--sm);
 }
 
 .desktop-menu ul li a{

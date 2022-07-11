@@ -20,6 +20,10 @@ html{
     font-family: 'Quicksand', sans-serif;
 }
 
+body{
+    font-size: var(--sm);
+}
+
 .my-order{
     width: 100%;
     height: 100vh;
@@ -49,20 +53,17 @@ html{
     gap: 1.6rem;
     align-items: center;
     margin-bottom: 2rem;
-    font-size: var(--sm);
 }
 
 .order p:nth-child(1){
     display: flex;
     flex-direction: column;
-    font-size: var(--sm);
     font-weight: bold;
 }
 
 .order p:nth-child(2){
     text-align: end;
     font-weight: bold;
-    font-size: var(--sm);
 }
 
 .order p span:nth-child(1){
@@ -70,7 +71,6 @@ html{
 }
 
 .order p span:nth-child(2){
-    font-size: var(--sm);
     color: var(--very-light-pink);
 }
 

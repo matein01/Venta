@@ -20,6 +20,10 @@ html{
     font-family: 'Quicksand', sans-serif;
 }
 
+body{
+    font-size: var(--sm);
+}
+
 .cards-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, 24rem);
@@ -57,7 +61,6 @@ html{
 }
 
 .product-info div p:nth-child(2){
-    font-size: var(--sm);
     color: var(--very-light-pink);
 }
 

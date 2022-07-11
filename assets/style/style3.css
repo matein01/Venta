@@ -20,6 +20,10 @@ html{
     font-family: 'Quicksand', sans-serif;
 }
 
+body{
+    font-size: var(--sm);
+}
+
 .login{
     width: 100%;
     height: 100vh;
@@ -52,14 +56,12 @@ html{
 
 .form a{
     color: var(--hospital-gree);
-    font-size: var(--sm);
     text-align: center;
     text-decoration: none;
     margin-bottom: 5.2rem;
 }
 
 .label{
-    font-size: var(--sm);
     font-weight: bold;
     margin-bottom: 0.4rem;
 }

@@ -20,6 +20,10 @@ html{
     font-family: 'Quicksand', sans-serif;
 }
 
+body{
+    font-size: var(--sm);
+}
+
 .mobile-menu{
     display: flex;
     flex-direction: column;
@@ -49,13 +53,11 @@ html{
 }
 
 .mobile-menu .email{
-    font-size: var(--sm);
     font-weight: 300;
 }
 
 .mobile-menu .sign-out{
     color: var(--hospital-gree);
-    font-size: var(--sm);
     font-weight: 500;
 }
 
