@@ -159,6 +159,8 @@ nav{
     position: absolute;
     top: 6rem;
     padding: 2.4rem;
+    left: 0;
+    width: 100%;
 }
 
 .mobile-menu a{
@@ -325,6 +327,79 @@ nav{
     color: var(--very-light-pink);
 }
 
+/*Aside (Singular product detail)*/
+.singular-product-detail{
+    background-color: var(--white);
+    width: 36rem;
+    padding-bottom: 2.4rem;
+    position: absolute;
+    right: 0;
+}
+
+.singular-product-close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: var(--white);
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+
+.singular-product-close:hover{
+    cursor: pointer;
+}
+
+.singular-product-detail > img:nth-child(2){
+    width: 100%;
+    height: 36rem;
+    object-fit: cover;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.singular-product-info{
+    margin: 2.4rem 2.4rem 0 2.4rem;
+}
+
+.singular-product-info p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-bottom: 0.4rem;
+}
+
+.singular-product-info p:nth-child(2){
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin-bottom: 3.6rem;
+}
+
+.singular-product-info p:nth-child(3){
+    color: var(--very-light-pink);
+    margin-bottom: 3.6rem;
+}
+
+.primary-button{
+    background-color: var(--hospital-gree);
+    border-radius: 0.8rem;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+}
+
+.add-to-cart-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 640px){
     .menu{
         display: block;
@@ -357,6 +432,10 @@ nav{
     .product-card img{
         width: 14rem;
         height: 14rem;
+    }
+
+    .singular-product-detail{
+        width: 100%;
     }
 }
 
