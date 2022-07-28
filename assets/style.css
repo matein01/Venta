@@ -93,6 +93,7 @@ nav{
 
 .navbar-shopping-cart{
     position: relative;
+    cursor: pointer;
 }
 
 .navbar-shopping-cart div{
@@ -114,7 +115,7 @@ nav{
     position: absolute;
     top: 6rem;
     right: 6rem;
-    background: var(--white);
+    background-color: var(--white);
     width: 13rem;
     height: auto;
     border: 0.1rem solid var(--very-light-pink);
@@ -154,6 +155,7 @@ nav{
 
 /*Estilos del menu mobile*/
 .mobile-menu{
+    background-color: var(--white);
     position: absolute;
     top: 6rem;
     padding: 2.4rem;
@@ -188,6 +190,98 @@ nav{
     font-weight: 500;
 }
 
+/*Aside (product ditail)*/
+.product-detail{
+    width: 36rem;
+    padding: 1rem 2.4rem ;
+    position: absolute;
+    right: 0;
+}
+
+.title-container{
+    display: flex;
+}
+
+.title-container img{
+    transform: rotate(180deg);
+    margin-right: 1.4rem;
+}
+
+.title{
+    font-size: var(--lg);
+    font-weight: bold;
+}
+
+.my-order-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.order{
+    background-color: var(--text-input-field);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.6rem;
+    align-items: center;
+    margin-bottom: 2.4rem;
+    border-radius: 0.8rem;
+    padding: 1rem 2.4rem;
+}
+
+.order p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.order p:nth-child(2){
+    text-align: end;
+    font-weight: bold;
+}
+
+.order p span:nth-child(1){
+    font-size: var(--md);
+}
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.shopping-cart figure{
+    margin: 0.3rem;
+}
+
+.shopping-cart figure img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.shopping-cart p:nth-child(2){
+    color: var(--very-light-pink);
+}
+
+.shopping-cart p:nth-child(3){
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.primary-button{
+    background-color: var(--hospital-gree);
+    border-radius: 0.8rem;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+}
+
 @media (max-width: 640px){
     .menu{
         display: block;
@@ -203,6 +297,10 @@ nav{
 
     .desktop-menu{
         display: none;
+    }
+
+    .product-detail{
+        width: 100%;
     }
 }
 
