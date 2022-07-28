@@ -1,3 +1,4 @@
+/*Estilos generales*/
 :root{
     --white: #FFFFFF;
     --black: #000000;
@@ -24,6 +25,7 @@ body{
     font-size: var(--sm);
 }
 
+/*Estilos del navbar*/
 nav{
     display: flex;
     justify-content: space-between;
@@ -107,6 +109,7 @@ nav{
     align-items: center;
 }
 
+/*Estilos del menu desktop*/
 .desktop-menu{
     position: absolute;
     top: 6rem;
@@ -149,6 +152,42 @@ nav{
     margin-bottom: 2rem;
 }
 
+/*Estilos del menu mobile*/
+.mobile-menu{
+    position: absolute;
+    top: 6rem;
+    padding: 2.4rem;
+}
+
+.mobile-menu a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    font-size: var(--md);
+}
+
+.mobile-menu ul{
+    list-style: none;
+    margin-top: 2.4rem;
+}
+
+.mobile-menu .orders{
+    border-top: 0.1rem solid var(--very-light-pink);
+}
+
+.mobile-menu ul li{
+    margin-bottom: 2.4rem;
+}
+
+.mobile-menu .email{
+    font-weight: 300;
+}
+
+.mobile-menu .sign-out{
+    color: var(--hospital-gree);
+    font-weight: 500;
+}
+
 @media (max-width: 640px){
     .menu{
         display: block;
@@ -159,6 +198,16 @@ nav{
     }
 
     .navbar-email{
+        display: none;
+    }
+
+    .desktop-menu{
+        display: none;
+    }
+}
+
+@media (min-width: 641px){
+    .mobile-menu{
         display: none;
     }
 }
