@@ -107,6 +107,21 @@ productList.push({
     price: 620,
     image: "assets/img/Computer.jpg"
 });
+productList.push({
+    name: "Motorcycle",
+    price: 520,
+    image: "assets/img/Motorcycle.jpg"
+});
+productList.push({
+    name: "Bike",
+    price: 120,
+    image: "assets/img/Bike.jpg"
+});
+productList.push({
+    name: "Computer",
+    price: 620,
+    image: "assets/img/Computer.jpg"
+});
 
 function viewProducts(array) {
     for(product of array) {
